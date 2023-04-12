@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Layout;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [Layout::class, 'index']);
+
+
+Route::controller(Layout::class)->group(function () {
+    Route::get('/Layout/home', 'home');
+    Route::get('/Layout/index', 'index');
 });
