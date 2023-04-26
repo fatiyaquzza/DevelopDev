@@ -27,7 +27,7 @@ Route::controller(Layout::class)->group(function () {
 });
 
 Route::get('/', function () {
-    return view('home');
+    return view('landingPage');
 });
 
 Route::get('/aboutUs', function () {
