@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 //Route::get('/', function () {
   //  return view('welcome');
 //});
@@ -22,4 +23,39 @@ Route::get('/', [Layout::class, 'Home']);
 Route::controller(Layout::class)->group(function(){
   Route::get('/layout/Home','Home');
   Route::get('/layout/index','index');
+=======
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/admin', [Layout::class, 'index']);
+
+
+Route::controller(Layout::class)->group(function () {
+    Route::get('/Layout/home', 'home');
+    Route::get('/Layout/index', 'index');
+});
+
+Route::get('/', function () {
+    return view('landingPage');
+});
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs', [
+        "title" => "About Us",
+    ]);
+});
+
+
+Route::get('/contactUs', function () {
+    return view('contactUs', [
+        "title" => "Contact Us",
+    ]);
+});
+
+Route::get('/portfolio', function () {
+    return view('portfolio', [
+        "title" => "Portfolio",
+    ]);
+>>>>>>> main
 });
