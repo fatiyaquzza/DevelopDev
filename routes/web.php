@@ -14,22 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
-//Route::get('/', function () {
-  //  return view('welcome');
-//});
-Route::get('/', [Layout::class, 'Home']);
-
-Route::controller(Layout::class)->group(function(){
-  Route::get('/layout/Home','Home');
-  Route::get('/layout/index','index');
-=======
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-Route::get('/admin', [Layout::class, 'index']);
+// Route::get('/admin', [Layout::class, 'index']);
+Route::get('/login', function () {
+    return view('login');
+});
 
+Route::get('/admin', [Layout::class, 'index']);
 
 Route::controller(Layout::class)->group(function () {
     Route::get('/Layout/home', 'home');
@@ -57,5 +51,4 @@ Route::get('/portfolio', function () {
     return view('portfolio', [
         "title" => "Portfolio",
     ]);
->>>>>>> main
 });
