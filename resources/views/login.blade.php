@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+
+        #dropdown-toggle:checked+#dropdown {
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="hold-transition login-page">
