@@ -28,7 +28,7 @@
                             href="/">Home</a></li>
                     <li class="md:ml-4"><a
                             class="py-2 inline-block text-gray-700 font-medium hover:bg-green-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 lg:hover:text-green-500"
-                            href="#">About Us</a></li>
+                            href="/aboutUs">About Us</a></li>
                     <li class="md:ml-4"><a
                             class="py-2 inline-block text-gray-700 font-medium hover:bg-green-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 lg:hover:text-green-500"href="/portfolio">Portfolio</a>
                     </li>
