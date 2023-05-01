@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="flex flex-col min-h-screen bg-green-100">
+<body class="flex flex-col min-h-screen bg-sky-100">
     <x-header />
 
     <x-footer />
