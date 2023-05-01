@@ -22,9 +22,9 @@
 </head>
 
 
-<body class="bg-green-100">
+<body class="bg-sky-100">
     <x-header />
-
+    
     <main class="relative">
         <section class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
             <div class="flex flex-col lg:flex-row lg:-mx-8">
