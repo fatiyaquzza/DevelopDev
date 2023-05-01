@@ -23,10 +23,10 @@
 </head>
 
 
-<body class="bg-green-100 flex flex-col min-h-screen text-roboto">
+<body class="bg-sky-100 flex flex-col min-h-screen text-roboto">
     <x-header />
 
-    <main>
+    <main class="mb-10">
         <section class="lg:flex md:flex block">
             <div>
                 <h1 class="mt-28 font-bold text-6xl text-center">

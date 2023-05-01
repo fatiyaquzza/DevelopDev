@@ -1,16 +1,16 @@
-<header class="sticky top-0 z-30 w-full px-2 bg-white sm:px-4 shadow-xl">
+<header class="bg-sky-800 sticky top-0 z-30 w-full px-2 bg-white sm:px-4 shadow-xl">
     <div class="flex flex-wrap items-center justify-between py-6">
         <div class="flex w-1/2 md:w-auto">
 
             <x-logo-usk />
-            <a href="index.html" class="text-black font-bold text-2xl uppercase my-auto">
+            <a href="index.html" class="text-white font-bold text-2xl uppercase my-auto">
 
                 <h1>Informatics FAP</h1>
 
             </a>
         </div>
 
-        <label for="menu-toggle" class="pointer-cursor md:hidden block"><svg class="fill-current text-black"
+        <label for="menu-toggle" class="pointer-cursor md:hidden block "><svg class="fill-current text-white"
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <title>menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -20,21 +20,21 @@
 
         <div class="hidden md:block w-full md:w-auto md:rounded-xl font-normal" id="menu">
             <nav
-                class="lg:w-full md:w-full sm:text-left  bg-white md:bg-transparent rounded mt-4 sm:mt-0 text-center md:p-0 md:mt-0 md:shadow-none">
+                class="lg:w-full md:w-full sm:text-left  bg-sky-800 md:bg-transparent rounded mt-4 sm:mt-0 text-center md:p-0 md:mt-0 md:shadow-none">
 
                 <ul class="md:flex : items-center">
                     <li class="md:ml-4"><a
-                            class="py-2 sm:mt-4 md:mt-0 lg:mt-0 xl:mt-0 inline-block text-gray-700 font-medium hover:bg-green-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 lg:hover:text-green-500"
+                            class="py-2 sm:mt-4 md:mt-0 lg:mt-0 xl:mt-0 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-sky-500"
                             href="/">Home</a></li>
                     <li class="md:ml-4"><a
-                            class="py-2 inline-block text-gray-700 font-medium hover:bg-green-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 lg:hover:text-green-500"
+                            class="py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-sky-500"
                             href="/aboutUs">About Us</a></li>
                     <li class="md:ml-4"><a
-                            class="py-2 inline-block text-gray-700 font-medium hover:bg-green-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 lg:hover:text-green-500"href="/portfolio">Portfolio</a>
+                            class="py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-sky-500"href="/portfolio">Portfolio</a>
                     </li>
 
                     <li class="md:ml-4"><a
-                            class="py-2 inline-block text-gray-700 font-medium hover:bg-green-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 lg:hover:text-green-500"
+                            class="py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-sky-500"
                             href="/contactUs">Contact Us</a></li>
                 </ul>
 
