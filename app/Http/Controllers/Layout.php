@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 use Illuminate\Http\Request;
 
 class Layout extends Controller
 {
+<<<<<<< Updated upstream
     public function  index(){
        return  View('layout.main');
     }
@@ -35,3 +39,10 @@ class Layout extends Controller
     }
 }
 >>>>>>> main
+=======
+    public function index()
+    {
+        return View('layout.main');
+    }
+}
+>>>>>>> Stashed changes
