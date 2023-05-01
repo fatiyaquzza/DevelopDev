@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\Layout;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -75,3 +79,11 @@ Route::controller(Layout::class)->group(function(){
     Route::get('/layout/index', 'home');
 >>>>>>> Stashed changes
 });
+=======
+Route::get('/',[Layout::class, 'home']);
+
+Route::controller(Layout::class)->group(function(){
+    Route::get('/Layout/home', 'home');
+    Route::get('/Layout/index', 'index');
+});
+>>>>>>> Stashed changes
