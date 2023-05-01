@@ -8,6 +8,15 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <title>Portfolio</title>
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+
+        #dropdown-toggle:checked+#dropdown {
+            display: block;
+        }
+    </style>
 
 
 </head>
