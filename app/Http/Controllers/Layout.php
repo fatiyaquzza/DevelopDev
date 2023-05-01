@@ -2,21 +2,7 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
-use Illuminate\Http\Request;
-
-class Layout extends Controller
-{
-    public function  index(){
-       return  View('layout.main');
-    }
-
-    public function Home(){
-        return View('layout.Home');
-    }
-}
-
-=======
+<<<<<<< Updated upstream
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
@@ -31,7 +17,24 @@ class Layout extends Controller
 
     public function home()
     {
+=======
+use Illuminate\Http\Request;
+
+class Layout extends Controller
+{
+    public function index(){
+        return View('Layout.main');
+}
+    public function home(){
+>>>>>>> Stashed changes
         return View('Layout.home');
     }
 }
 >>>>>>> main
+=======
+    public function index()
+    {
+        return View('layout.main');
+    }
+}
+>>>>>>> Stashed changes
