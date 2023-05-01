@@ -18,8 +18,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/admin', [Layout::class, 'index']);
+// Route::get('/admin', [Layout::class, 'index']);
+Route::get('/login', function () {
+    return view('login');
+});
 
+Route::get('/admin', [Layout::class, 'index']);
 
 Route::controller(Layout::class)->group(function () {
     Route::get('/Layout/home', 'home');
