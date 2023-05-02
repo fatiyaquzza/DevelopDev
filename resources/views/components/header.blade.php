@@ -1,4 +1,4 @@
-<header class="bg-sky-800 sticky top-0 z-30 w-full px-2 bg-white sm:px-4 shadow-xl">
+<header class="bg-sky-800 sticky top-0 z-30 w-full px-2 sm:px-4 shadow-xl">
     <div class="flex flex-wrap items-center justify-between py-6">
         <div class="flex w-1/2 md:w-auto">
 
