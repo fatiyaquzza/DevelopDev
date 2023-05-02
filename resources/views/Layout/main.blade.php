@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -259,7 +259,6 @@
     <script src="{{ asset('/') }}dist/js/demo.js"></script>
 </body>
 
-=======
 
 <!DOCTYPE html>
 <html lang="en">
@@ -508,5 +507,5 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
 </body>
->>>>>>> Stashed changes
+
 </html>
