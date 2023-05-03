@@ -200,7 +200,6 @@
 
                 <!-- Sidebar Menu -->
                 @include('layout.menu')
-                @include('layout.menu')
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
