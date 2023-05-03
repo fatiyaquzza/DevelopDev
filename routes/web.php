@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Layout;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,3 +53,6 @@ Route::get('/portfolio', function () {
         "title" => "Portfolio",
     ]);
 });
+
+Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
