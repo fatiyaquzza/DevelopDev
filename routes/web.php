@@ -15,7 +15,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landingPage');
+});
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs', [
+        "title" => "About Us",
+    ]);
+});
+
+
+Route::get('/contactUs', function () {
+    return view('contactUs', [
+        "title" => "Contact Us",
+    ]);
+});
+
+Route::get('/portfolio', function () {
+    return view('portfolio', [
+        "title" => "Portfolio",
+    ]);
+});
+
+Route::get('/test', function () {
+    return view('test', [
+        "title" => "Test",
+    ]);
 });
 
 Route::get('/dashboard', function () {
