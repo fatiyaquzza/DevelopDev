@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\Layout;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,44 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/admin', [Layout::class, 'index']);
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/admin', [Layout::class, 'index']);
-
-Route::controller(Layout::class)->group(function () {
-    Route::get('/Layout/home', 'home');
-    Route::get('/Layout/index', 'index');
-});
-
 Route::get('/', function () {
-    return view('landingPage');
+    return view('welcome');
 });
 
-Route::get('/aboutUs', function () {
-    return view('aboutUs', [
-        "title" => "About Us",
-    ]);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
-Route::get('/contactUs', function () {
-    return view('contactUs', [
-        "title" => "Contact Us",
-    ]);
-});
-
-Route::get('/portfolio', function () {
-    return view('portfolio', [
-        "title" => "Portfolio",
-    ]);
-});
+require __DIR__.'/auth.php';
 
 Route::get('/admin', [layout::class, 'index'])->middleware('auth');
 
