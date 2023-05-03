@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen bg-sky-100">
     <x-header />
     <div class="container my-32 px-6 mx-auto">
 
