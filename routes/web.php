@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,15 +39,15 @@ Route::get('/portfolio', function () {
     ]);
 });
 
-Route::get('/test', function () {
-    return view('test', [
-        "title" => "Test",
+Route::get('/isi', function () {
+    return view('isi', [
+        "title" => "Isi",
     ]);
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return view('layout.main');
+})->middleware(['auth', 'verified'])->name('layout.main');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -53,12 +55,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
-Route::get('/admin', [layout::class, 'index'])->middleware('auth');
+// Route::get('/admin', [layout::class, 'index'])->middleware('auth');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+// Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']);
+// Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+// Route::post('/register', [RegisterController::class, 'store']);

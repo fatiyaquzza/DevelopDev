@@ -78,7 +78,7 @@
         {{-- card di dalam div ni --}}
         <div class="mx-auto lg:mx-0 flex flex-wrap mb-14">
 
-        <a href="">
+            <a href="/isi">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
                 <div class="wil_img">
                 <img src="https://i.pinimg.com/564x/09/c6/a4/09c6a4a798f885e5b6b3add822e94732.jpg">
