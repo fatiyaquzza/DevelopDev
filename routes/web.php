@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Layout;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,3 +54,11 @@ Route::get('/portfolio', function () {
         "title" => "Portfolio",
     ]);
 });
+
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+Route::get('/admin', [layout::class, 'index'])->middleware('auth');
