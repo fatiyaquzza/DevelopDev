@@ -35,7 +35,8 @@
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <a href="../../index2.html"
                 class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-                Admin LTE
+                <x-logo-usk />
+                INFORMATICS FAP
             </a>
             <div
                 class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -68,7 +69,7 @@
                             Sign in
                         </button>
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Don’t have an account yet? <a href="#"
+                            Don’t have an account yet? <a href="/register"
                                 class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
                         </p>
                     </form>
