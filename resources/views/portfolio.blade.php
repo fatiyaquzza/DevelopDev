@@ -80,6 +80,9 @@
 
             <a href="/isi">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
+                <div class="wil_img">
+                <img src="https://i.pinimg.com/564x/09/c6/a4/09c6a4a798f885e5b6b3add822e94732.jpg">
+                </div>
                     <h1 class="text-center font-bold mb-4">Author : Wilda Fahera</h1>
                     <p class="mx-6 text-center">"Sistem Pendukung Keputusan Penilaian Kesehatan tanah Dengan Metode
                         Simple
@@ -87,13 +90,16 @@
                         Weighting"</p>
                     <div class="flex mx-12 mt-6">
                         <p class="bg-pink-200 rounded-full w-4 h-4 my-auto mr-1"></p>
-                        <p class="font-bold">GIS</p>
+                        <p class="font-bold">GIS1</p>
                     </div>
                 </div>
             </a>
 
             <a href="">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
+                <div class="wil_img">
+                <img src="https://i.pinimg.com/564x/03/50/70/0350706d4cf5af4cfcf282f13425fd72.jpg">
+                </div>
                     <h1 class="text-center font-bold mb-4">Author : Wilda Fahera</h1>
                     <p class="mx-6 text-center">"Sistem Pendukung Keputusan Penilaian Kesehatan tanah Dengan Metode
                         Simple
@@ -101,27 +107,35 @@
                         Weighting"</p>
                     <div class="flex mx-12 mt-6">
                         <p class="bg-pink-200 rounded-full w-4 h-4 my-auto mr-1"></p>
-                        <p class="font-bold">GIS</p>
+                        <p class="font-bold">GIS2</p>
                     </div>
                 </div>
             </a>
 
             <a href="">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
+                <div class="wil_img">
+                <div class="wil_img">
+                <img src="https://i.pinimg.com/564x/f6/31/5a/f6315a7a4e064927dda8f39fa412ba5c.jpg">
+                </div>
+                </div>
                     <h1 class="text-center font-bold mb-4">Author : Wilda Fahera</h1>
                     <p class="mx-6 text-center">"Sistem Pendukung Keputusan Penilaian Kesehatan tanah Dengan Metode
                         Simple
                         Additive
-                        Weighting"</p>
+                        Weighting wfaisbies iefuiehsfiu iufhiuehf9o iweufhiuehsu"</p>
                     <div class="flex mx-12 mt-6">
                         <p class="bg-pink-200 rounded-full w-4 h-4 my-auto mr-1"></p>
-                        <p class="font-bold">GIS</p>
+                        <p class="font-bold">GIS3</p>
                     </div>
                 </div>
             </a>
 
             <a href="">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
+                <div class="wil_img">
+                <img src="https://i.pinimg.com/564x/6a/9f/78/6a9f7827ba8404c83254ab9a285a0897.jpg">
+                </div>
                     <h1 class="text-center font-bold mb-4">Author : Wilda Fahera</h1>
                     <p class="mx-6 text-center">"Sistem Pendukung Keputusan Penilaian Kesehatan tanah Dengan Metode
                         Simple
@@ -129,13 +143,14 @@
                         Weighting"</p>
                     <div class="flex mx-12 mt-6">
                         <p class="bg-pink-200 rounded-full w-4 h-4 my-auto mr-1"></p>
-                        <p class="font-bold">GIS</p>
+                        <p class="font-bold">GIS4</p>
                     </div>
                 </div>
             </a>
 
             <a href="">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
+                <img src="https://i.pinimg.com/564x/3a/97/c6/3a97c6eafd2d0e626a40a005048eddfd.jpg">
                     <h1 class="text-center font-bold mb-4">Author : Wilda Fahera</h1>
                     <p class="mx-6 text-center">"Sistem Pendukung Keputusan Penilaian Kesehatan tanah Dengan Metode
                         Simple
@@ -143,7 +158,7 @@
                         Weighting"</p>
                     <div class="flex mx-12 mt-6">
                         <p class="bg-pink-200 rounded-full w-4 h-4 my-auto mr-1"></p>
-                        <p class="font-bold">GIS</p>
+                        <p class="font-bold">GIS5</p>
                     </div>
                 </div>
             </a>
@@ -151,9 +166,10 @@
            
         </div>
 
-
     </main>
     <x-footer />
+
 </body>
+
 
 </html>
