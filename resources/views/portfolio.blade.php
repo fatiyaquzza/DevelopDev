@@ -78,7 +78,7 @@
         {{-- card di dalam div ni --}}
         <div class="mx-auto lg:mx-0 flex flex-wrap mb-14">
 
-            <a href="/test">
+            <a href="/isi">
                 <div class="bg-white rounded-lg drop-shadow-lg w-80 pt-4 pb-2 mx-6 mt-8">
                     <h1 class="text-center font-bold mb-4">Author : Wilda Fahera</h1>
                     <p class="mx-6 text-center">"Sistem Pendukung Keputusan Penilaian Kesehatan tanah Dengan Metode
