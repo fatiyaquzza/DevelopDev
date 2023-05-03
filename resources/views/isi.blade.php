@@ -31,7 +31,7 @@
             Pelajaran Teknik
             Animasi 3d Kompetensi Keahlian Multimedia (2017)</h1>
         <div class="flex justify-center my-4">
-            <x-logo-usk />
+            <img src="https://st2.depositphotos.com/4082359/8710/i/950/depositphotos_87100194-stock-photo-male-student-working-in-a.jpg" alt="">
         </div>
         <p>Dosen Pembimbing 1 : Pak Alim Misbullah</p>
         <p>Dosen Pembimbing 2 : Pak Nazaruddin</p>
@@ -59,11 +59,18 @@
             kualitas kesehatan suatu tanah.</p>
     </section>
 
-    <section class="my-8 ">
-        <h1 class="font-medium text-2xl text-center">
-            Output Tugas Akhir
-        </h1>
-    </section>
+    <section class="my-8">
+  <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <h1 class="font-medium text-2xl">
+      Output Tugas Akhir
+    </h1>
+    <img src="https://i.pinimg.com/originals/57/8e/7c/578e7c7091118d8096042e7b12aa6f27.jpg" alt=""> 
+  </div>
+</section>
+
+
+
+
     {{-- <x-footer /> --}}
 </body>
 
