@@ -1,10 +1,8 @@
 <?php
 
 use App\Http\Controllers\Layout;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,17 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-//Route::get('/', function () {
-  //  return view('welcome');
-//});
-Route::get('/', [Layout::class, 'Home']);
-
-Route::controller(Layout::class)->group(function(){
-  Route::get('/layout/Home','Home');
-  Route::get('/layout/index','index');
-=======
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -66,24 +53,12 @@ Route::get('/portfolio', function () {
     return view('portfolio', [
         "title" => "Portfolio",
     ]);
->>>>>>> main
-=======
-// Route::get('/', function () {
-//  return view('welcome');
-// });
-
-Route::get('/',[Layout::class, 'index']);
-
-Route::controller(Layout::class)->group(function(){
-    Route::get('/layout/home', 'home');
-    Route::get('/layout/index', 'home');
->>>>>>> Stashed changes
 });
-=======
-Route::get('/',[Layout::class, 'home']);
 
-Route::controller(Layout::class)->group(function(){
-    Route::get('/Layout/home', 'home');
-    Route::get('/Layout/index', 'index');
-});
->>>>>>> Stashed changes
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+Route::get('/admin', [layout::class, 'index'])->middleware('auth');
