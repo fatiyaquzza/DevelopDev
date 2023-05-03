@@ -66,8 +66,13 @@
     </h1>
     <img src="https://i.pinimg.com/originals/57/8e/7c/578e7c7091118d8096042e7b12aa6f27.jpg" alt=""> 
   </div>
-</section>
-
+  <div style="margin-top: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <img src="https://i.pinimg.com/originals/fd/19/c0/fd19c012fdba613d73e4fca9f4c84338.jpg" alt=""> 
+  </div>
+  <div style="margin-top: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <img src="https://i.pinimg.com/originals/57/8e/7c/578e7c7091118d8096042e7b12aa6f27.jpg" alt=""> 
+  </div>
+</section> 
 
 
 
