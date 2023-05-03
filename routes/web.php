@@ -39,9 +39,9 @@ Route::get('/portfolio', function () {
     ]);
 });
 
-Route::get('/test', function () {
-    return view('test', [
-        "title" => "Test",
+Route::get('/isi', function () {
+    return view('isi', [
+        "title" => "Isi",
     ]);
 });
 
