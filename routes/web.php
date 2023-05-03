@@ -1,12 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-use App\Http\Controllers\Layout;
-use App\Http\Controllers\LoginController;
-=======
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
->>>>>>> main
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,22 +15,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/admin', [Layout::class, 'index']);
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/admin', [Layout::class, 'index']);
-
-Route::controller(Layout::class)->group(function () {
-    Route::get('/Layout/home', 'home');
-    Route::get('/Layout/index', 'index');
-});
 
 Route::get('/', function () {
     return view('landingPage');
@@ -60,10 +39,6 @@ Route::get('/portfolio', function () {
     ]);
 });
 
-<<<<<<< HEAD
-Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']);
-=======
 Route::get('/test', function () {
     return view('test', [
         "title" => "Test",
@@ -80,17 +55,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require _DIR_ . '/auth.php';
+require __DIR__ . '/auth.php';
 
-Route::get('/admin', [layout::class, 'index'])->middleware('auth');
->>>>>>> main
+// Route::get('/admin', [layout::class, 'index'])->middleware('auth');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+// Route::post('/login', [LoginController::class, 'authenticate']);
 
-<<<<<<< HEAD
-Route::get('/admin', [layout::class, 'index'])->middleware('auth');
-=======
-Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']);
->>>>>>> main
+// Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+// Route::post('/register', [RegisterController::class, 'store']);
