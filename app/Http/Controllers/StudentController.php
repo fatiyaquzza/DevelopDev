@@ -17,6 +17,18 @@ class StudentController extends Controller
         return view('students.index')->with('students', $students);
     }
 
+    public function tampil()
+    {
+        $data = Student::all();
+        return view('portfolio', compact('data'));
+    }
+
+    public function isi(string $id): View
+    {
+        $students = Student::find($id);
+        return view('isi', compact('students'))->with('portfolio', $students);
+    }
+
 
     public function create(): View
     {
