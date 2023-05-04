@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Layout;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +17,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Route::redirect('/', '/student');
+// Route::resource("/student", StudentController::class);
+
+
+Route::controller(Layout::class)->group(function () {
+    Route::get('/layout/Home', 'Home');
+    Route::get('/student', 'layout');
+    Route::redirect('/', '/student');
+    Route::resource("/student", StudentController::class);
+});
 
 Route::get('/', function () {
     return view('landingPage');
