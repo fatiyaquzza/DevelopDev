@@ -27,6 +27,7 @@ Route::controller(Layout::class)->group(function () {
     Route::get('/student', 'layout');
     Route::redirect('/', '/student');
     Route::resource("/student", StudentController::class);
+    
 });
 
 Route::get('/portfolio/{id}', [StudentController::class, 'isi']);
