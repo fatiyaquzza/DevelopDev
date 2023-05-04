@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AdminLTE 3 | Blank Page</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -57,7 +59,7 @@
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('/') }}dist/img/user2-160x160.jpg" class="img-circle elevation-2"
+                        <img src="{{ asset('/') }}dist/img/avatar.svg" class="img-circle elevation-2"
                             alt="User Image">
                     </div>
                     <div class="info">
