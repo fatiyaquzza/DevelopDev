@@ -27,7 +27,10 @@ Route::controller(Layout::class)->group(function () {
     Route::get('/student', 'layout');
     Route::redirect('/', '/student');
     Route::resource("/student", StudentController::class);
+    
 });
+
+Route::get('/portfolio/{id}', [StudentController::class, 'isi']);
 
 Route::get('/', function () {
     return view('landingPage');
@@ -52,11 +55,14 @@ Route::get('/portfolio', function () {
     ]);
 });
 
-Route::get('/isi', function () {
-    return view('isi', [
-        "title" => "Isi",
-    ]);
-});
+// Route::get('/isi', function () {
+//     return view('isi', [
+//         "title" => "Isi",
+//     ]);
+// });
+
+Route::get('/portfolio', [StudentController::class, 'tampil'])->name('portfolio');
+
 
 Route::get('/dashboard', function () {
     return view('layout.main');
@@ -67,6 +73,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
 
 require __DIR__ . '/auth.php';
 
