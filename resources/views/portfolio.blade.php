@@ -24,12 +24,12 @@
 <body class="flex flex-col min-h-screen bg-sky-100">
     <x-header />
     <main class="mx-8">
-        <form class="mt-8 px-6" type="get">
+        <form action="{{ url('portfolio') }}" class="mt-8 px-6" type="get">
             <div class="flex lg:w-1/2 md:w-3/4">
                 {{-- <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your
                 Email</label> --}}
                 <label for="kategori"></label>
-                <select id="kategori"
+                <select id="kategori" name="kategori"
                     class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600">
                     <svg aria-hidden="true" class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -40,25 +40,25 @@
                     {{-- <div id="dropdown"
                     class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"> --}}
                     {{-- <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button"> --}}
-                    <option selected class="text-left">
-                        All Categories</option>
-                    <option value="rpl" class="text-left">
-                        Rekayasa Perangkat Lunak
-                    </option>
-                    <option value="sig" class="text-left">
-                        Sistem Informasi Geografis
-                    </option>
-                    <option value="dm" class="text-left">
-                        Data Mining
-                    </option>
-                    <option value="jaringan" class="text-left">
-                        Jaringan
-                    </option>
+                        <option selected class="text-left" value="all">
+                            All Categories</option>
+                        <option value="RPL" class="text-left">
+                            Rekayasa Perangkat Lunak
+                        </option>
+                        <option value="SIG" class="text-left">
+                            Sistem Informasi Geografis
+                        </option>
+                        <option value="DM" class="text-left">
+                            Data Mining
+                        </option>
+                        <option value="Jaringan" class="text-left">
+                            Jaringan
+                        </option>
                     {{-- </ul> --}}
                     {{-- </div> --}}
                 </select>
                 <div class="relative w-full">
-                    <input type="search" id="search-dropdown"
+                    <input type="text" name="search" id="search-dropdown"
                         class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
                         placeholder="Search here.." required>
                     <button type="submit"
