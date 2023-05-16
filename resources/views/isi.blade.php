@@ -24,26 +24,26 @@
     <x-header />
 
     <section class="mx-auto text-center shadow-lg mt mt-8 pb-8">
-        <p class="text-green-500">{{ $students->nama }} || {{ $students->npm }}</p>
+        <p class="text-gray-600 font-medium">{{ $students->nama }} || {{ $students->npm }}</p>
         <h1 class="mt-8 font-bold text-2xl">{{ $students->judul }}</h1>
         <div class="flex justify-center my-4 w-60 mx-auto">
             <img src="{{ asset('fotoOutput/' . $students->foto_mhs) }}" alt="">
         </div>
-        <p>Dosen Pembimbing 1 :{{ $students->dospem_1 }}</p>
+        <p>Dosen Pembimbing 1 : {{ $students->dospem_1 }}</p>
         <p>Dosen Pembimbing 2 : {{ $students->dospem_2 }}</p>
         <p>Bidang Minat : {{ $students->bidang_minat }}</p>
 
 
     </section>
 
-    <section class="bg-green-100 pb-10 drop-shadow-lg">
+    <section class="bg-sky-100 pb-10 drop-shadow-lg text-black">
         <h1 class="text-center py-8 font-medium text-2xl">Deskripsi</h1>
         <p class="mx-6 text-justify">{{ $students->deskripsi }}</p>
     </section>
 
     <section class="my-8">
         <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <h1 class="font-medium text-2xl">
+            <h1 class="font-medium text-2xl mb-10">
                 Output Tugas Akhir
             </h1>
             <img src="{{ asset('fotoOutput/' . $students->foto1) }}" alt="" style="width:700px">
