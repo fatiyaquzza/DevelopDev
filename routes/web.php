@@ -72,6 +72,12 @@ Route::get('/dashboard', function () {
     return view('layout.main');
 })->middleware(['auth', 'verified'])->name('layout.main');
 
+Route::controller(Layout::class)->group(function () {
+    Route::resource("/contactUs", ContactUsController::class);
+    // Route::get('/student', 'layout');
+    // Route::redirect('/', '/student');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/layout/Home', [DashboardController::class, 'index'])->name('index');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -83,11 +89,7 @@ Route::middleware('auth')->group(function () {
         // Route::get('/student', 'layout');
         // Route::redirect('/', '/student');
     });
-    Route::controller(Layout::class)->group(function () {
-        Route::resource("/contactUs", ContactUsController::class);
-        // Route::get('/student', 'layout');
-        // Route::redirect('/', '/student');
-    });
+   
 });
 
 
