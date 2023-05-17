@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Layout;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
@@ -21,14 +23,16 @@ use Illuminate\Support\Facades\Route;
 // Route::redirect('/', '/student');
 // Route::resource("/student", StudentController::class);
 
+// Route::get('/student/buat', [StudentController::class, 'create']);
 
-Route::controller(Layout::class)->group(function () {
-    Route::get('/layout/Home', 'Home');
-    Route::get('/student', 'layout');
-    Route::redirect('/', '/student');
-    Route::resource("/student", StudentController::class);
-    
-});
+// Route::post('/student/edit/submit', [StudentController::class, 'store']);
+
+// Route::controller(Layout::class)->group(function () {
+//     Route::get('/layout/Home', 'Home');
+//     Route::resource("/student", StudentController::class);
+//     // Route::get('/student', 'layout');
+//     // Route::redirect('/', '/student');
+// });
 
 Route::get('/portfolio/{id}', [StudentController::class, 'isi']);
 
@@ -43,17 +47,17 @@ Route::get('/aboutUs', function () {
 });
 
 
-Route::get('/contactUs', function () {
-    return view('contactUs', [
-        "title" => "Contact Us",
-    ]);
-});
+// Route::get('/contactUs', function () {
+//     return view('contactUs', [
+//         "title" => "Contact Us",
+//     ]);
+// });
 
-Route::get('/portfolio', function () {
-    return view('portfolio', [
-        "title" => "Portfolio",
-    ]);
-});
+// Route::get('/portfolio', function () {
+//     return view('portfolio', [
+//         "title" => "Portfolio",
+//     ]);
+// });
 
 // Route::get('/isi', function () {
 //     return view('isi', [
@@ -61,17 +65,31 @@ Route::get('/portfolio', function () {
 //     ]);
 // });
 
-Route::get('/portfolio', [StudentController::class, 'tampil'])->name('portfolio');
+Route::get('/portfolio', [StudentController::class, 'daftar_portfolio'])->name('portfolio');
 
 
 Route::get('/dashboard', function () {
     return view('layout.main');
 })->middleware(['auth', 'verified'])->name('layout.main');
 
+Route::controller(Layout::class)->group(function () {
+    Route::resource("/contactUs", ContactUsController::class);
+    // Route::get('/student', 'layout');
+    // Route::redirect('/', '/student');
+});
+
 Route::middleware('auth')->group(function () {
+    Route::get('/layout/Home', [DashboardController::class, 'index'])->name('index');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::controller(Layout::class)->group(function () {
+        Route::get('/layout/Home', 'Home');
+        Route::resource("/student", StudentController::class);
+        // Route::get('/student', 'layout');
+        // Route::redirect('/', '/student');
+    });
+   
 });
 
 
