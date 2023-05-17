@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
-
-namespace App\Http\Controllers;
 
 class Layout extends Controller
 {
     public function index()
     {
-        return View('Layout.main');
+        return  View('layout.main');
     }
 
-    public function home()
+    public function Home()
     {
-        return View('Layout.home');
+        return View('layout.Home');
+    }
+
+    public function layout()
+    {
+        return View('students.layout');
     }
 }
