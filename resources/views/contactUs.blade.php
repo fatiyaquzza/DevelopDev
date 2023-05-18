@@ -45,7 +45,8 @@
                     </p>
                 </div>
                 <div class="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6 mt-6">
-                    <form action="" method="post">
+                    <form action="{{ url('contactUs') }}" method="post">
+                        @csrf
                         <div class="mb-6">
                             <label for="nama"
                                 class="block mb-2 text-sm font-medium text-gray-900">Nama</label>
@@ -62,18 +63,19 @@
                         </div>
                         <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your
                             message</label>
-                        <textarea id="message" rows="6"
+                        <textarea id="message" name="message" rows="6"
                             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                             placeholder="Leave a comment..." required></textarea>
 
-                        <div class="form-group form-check text-center mb-6 mt-8">
+                        {{-- <div class="form-group form-check text-center mb-6 mt-8">
                             <input type="checkbox"
                                 class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
                                 id="exampleCheck87" checked>
                             <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a
                                 copy of this
                                 message</label>
-                        </div>
+                        </div> --}}
+                        <br>
                         <div class="flex flex-col items-center">
                             <button type="submit"
                                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Submit</button>
@@ -82,10 +84,16 @@
                 </div>
             </div>
         </section>
-       
+
 
     </div>
-    
+
+    @if (session('flash_message'))
+    <div class="alert alert-success">
+        {{ session('flash_message') }}
+    </div>
+@endif
+
     <x-footer />
 </body>
 
