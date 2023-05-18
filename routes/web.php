@@ -86,10 +86,12 @@ Route::middleware('auth')->group(function () {
     Route::controller(Layout::class)->group(function () {
         Route::get('/layout/Home', 'Home');
         Route::resource("/student", StudentController::class);
-        // Route::get('/student', 'layout');
+        Route::resource("/layout/Home", DashboardController::class);
+        Route::get("/layout/feedback", [ContactUsController::class, 'tampil']);
+
         // Route::redirect('/', '/student');
     });
-   
+
 });
 
 
