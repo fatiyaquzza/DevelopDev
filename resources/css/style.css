@@ -1,0 +1,22 @@
+.page-breadcrumb {
+    padding: 20px 20px 0 20px; }
+    .page-breadcrumb .page-title {
+      margin-bottom: 0px; }
+    .page-breadcrumb .breadcrumb {
+      padding: 0px;
+      margin: 0px;
+      background: transparent;
+      font-size: 12px; }
+      .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+        content: "\e649";
+        font-family: themify;
+        color: #ced4da;
+        font-size: 11px; }
+
+        html[dir="rtl"] .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item {
+            padding-right: 0.5rem;
+            padding-left: 0; }
+            html[dir="rtl"] .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+              content: "\e64a";
+              padding-right: 0;
+              padding-left: 0.5rem; }
