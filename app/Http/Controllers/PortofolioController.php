@@ -20,7 +20,8 @@ class PortofolioController extends Controller
         return view('portofolio',compact('data'));
     }
 
-    public function tambahportofolio(){
+    public function tambahportofolio()
+    {
         return view('tambahdata');
     }
 }
