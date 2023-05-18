@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Blank Page</title>
+    <title>Admin</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('/') }}plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('/') }}dist/css/adminlte.min.css">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -47,12 +48,12 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4 ">
             <!-- Brand Logo -->
-            <a href="{{ asset('/') }}index3.html" class="brand-link">
+            <div class="brand-link bg-gray-light">
 
-                <span class="brand-text font-weight-light">INFORMATICS FAP</span>
-            </a>
+                <span class="brand-text font-sans font-weight-bold">INFORMATICS FAP</span>
+            </div>
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -132,11 +133,11 @@
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.1.0
+
+            <div class="w-full lg:mx-2 text-center">
+            <h3 class="font-bold text-sm text-gray-700 uppercase">Informatics Final Assignment Portfolio</h3>
+            <h5 class="tracking-wider font-semibold text-xs text-blue-500">© 2023. All rights reserved.</h5>
             </div>
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-            reserved.
         </footer>
 
         <!-- Control Sidebar -->
