@@ -2,7 +2,7 @@
 @section('content')
 
     <div class="card">
-        <div class="card-header">Students Page</div>
+        <div class="card-header font-sans text-lg font-semibold">Students Page</div>
         <div class="card-body">
 
             <form action="{{ url('student') }}" method="post" enctype="multipart/form-data">

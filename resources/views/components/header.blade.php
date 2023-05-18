@@ -3,11 +3,9 @@
         <div class="flex w-1/2 md:w-auto">
 
             <x-logo-usk />
-            <a href="index.html" class="text-white font-bold text-2xl uppercase my-auto">
 
-                <h1>Informatics FAP</h1>
+                <h1 class="text-white font-bold text-2xl uppercase my-auto">Informatics FAP</h1>
 
-            </a>
         </div>
 
         <label for="menu-toggle" class="pointer-cursor md:hidden block "><svg class="fill-current text-white"
