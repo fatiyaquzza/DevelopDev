@@ -18,6 +18,10 @@ class ContactUsController extends Controller
         $data = ContactUs::create($request->all());
         session()->flash("success","Success Message");
         return redirect('contactUs');
+    }
 
+    public function tampil(){
+        $isi = ContactUs::all();
+        return view('layout.feedback', compact('isi'));
     }
 }
