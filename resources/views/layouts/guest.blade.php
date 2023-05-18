@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Login') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -20,8 +20,8 @@
 
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 bg-cover bg-center" style="background-image: url(https://akupintar.id/documents/20143/0/jurusan+snmptn.jpg/3607f396-9329-3d62-f554-e51f16339bdf?t=1641475015328&imagePreview=1)">
         <div>
-            <a href="../../index2.html"
-                class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+            <a href="../../"
+                class="flex items-center mb-6 text-2xl font-semibold text-white dark:text-white">
                 <x-logo-usk />
                 INFORMATICS FAP
             </a>

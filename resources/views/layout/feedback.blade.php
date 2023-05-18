@@ -36,19 +36,23 @@
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                         <thead class="text-sm text-black uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
-                                <th scope="col" class="px-6 py-3 w-20">No</th>
-                                <th scope="col" class="px-6 py-3 ">Nama</th>
-                                <th scope="col" class="px-6 py-3 ">Email</th>
-                                <th scope="col" class="px-6 py-3">Deskripsi</th>
+                                <th  class="px-6 py-3 w-20">No</th>
+                                <th  class="px-6 py-3 ">Nama</th>
+                                <th  class="px-6 py-3 ">Email</th>
+                                <th  class="px-6 py-3">Deskripsi</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($isi as $item)
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600">
-                                    <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $loop->iteration }}</td>
-                                    <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $item->nama }}</td>
-                                    <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $item->email }}</td>
-                                    <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $item->message }}</td>
+                                    <td  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $loop->iteration }}</td>
+                                    <td  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $item->nama }}</td>
+                                    <td  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ $item->email }}</td>
+                                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <div class="h-40 w-96 overflow-y-auto">
+                                            <p class="whitespace-normal text-justify mr-4">{{ $item->message }}</p>
+                                        </div>
+                                    </td>
 
                                 </tr>
                             @endforeach
